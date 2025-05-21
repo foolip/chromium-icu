@@ -1500,7 +1500,7 @@ struct CodePointRange {
     /** @draft ICU 76 */
     CodePointRange(const CodePointRange &other) = default;
     /** @draft ICU 76 */
-    size_t size() const { return (rangeEnd + 1) - rangeStart; }
+    size_t size() const { return static_cast<size_t>((rangeEnd + 1) - rangeStart); }
     /** @draft ICU 76 */
     iterator begin() const { return rangeStart; }
     /** @draft ICU 76 */
