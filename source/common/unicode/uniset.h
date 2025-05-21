@@ -513,7 +513,7 @@ public:
      * @see cloneAsThawed
      * @stable ICU 2.0
      */
-    virtual UnicodeSet* clone() const override;
+    UnicodeSet* clone() const override;
 
     /**
      * Returns the hash code value for this set.
@@ -522,7 +522,7 @@ public:
      * @see Object#hashCode()
      * @stable ICU 2.0
      */
-    virtual int32_t hashCode() const;
+    int32_t hashCode() const;
 
     /**
      * Get a UnicodeSet pointer from a USet
@@ -792,7 +792,7 @@ public:
      * @stable ICU 2.0
      * @see getRangeCount
      */
-    virtual int32_t size() const;
+    int32_t size() const;
 
     /**
      * Returns <tt>true</tt> if this set contains no elements.
@@ -800,7 +800,7 @@ public:
      * @return <tt>true</tt> if this set contains no elements.
      * @stable ICU 2.0
      */
-    virtual UBool isEmpty() const;
+    UBool isEmpty() const;
 
     /**
      * @return true if this set contains multi-character strings or the empty string.
@@ -1509,7 +1509,7 @@ public:
      * A frozen set will not be modified.
      * @stable ICU 2.0
      */
-    virtual UnicodeSet& clear();
+    UnicodeSet& clear();
 
     /**
      * Close this set over the given attribute.  For the attribute
@@ -1555,7 +1555,7 @@ public:
      * @see #getRangeEnd
      * @stable ICU 2.4
      */
-    virtual int32_t getRangeCount() const;
+    int32_t getRangeCount() const;
 
     /**
      * Iteration method that returns the first character in the
