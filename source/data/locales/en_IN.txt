@@ -180,8 +180,8 @@ en_IN{
                 EBhms{"E, h:mm:ss B"}
                 EHm{"E, HH:mm"}
                 EHms{"E, HH:mm:ss"}
-                Ehm{"E, h:mm a"}
-                Ehms{"E, h:mm:ss a"}
+                Ehm{"E, h:mm a"}
+                Ehms{"E, h:mm:ss a"}
                 GyMMM{"MMM, y G"}
                 GyMMMEEEEd{"EEEE, d MMM y G"}
                 GyMMMEd{"E, d MMM, y G"}
@@ -287,8 +287,8 @@ en_IN{
                 EBhms{"E, h:mm:ss B"}
                 EHm{"E, HH:mm"}
                 EHms{"E, HH:mm:ss"}
-                Ehm{"E, h:mm a"}
-                Ehms{"E, h:mm:ss a"}
+                Ehm{"E, h:mm a"}
+                Ehms{"E, h:mm:ss a"}
                 GyMMMEEEEd{"EEEE, d MMM y G"}
                 MMMEEEEd{"EEEE, d MMM"}
                 MMMMEEEEd{"EEEE, d MMMM"}

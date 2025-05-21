@@ -36177,6 +36177,24 @@ supplementalData:table(nofallback){
             }
             preferred{"h"}
         }
+        XA{
+            allowed{
+                "h",
+                "hb",
+                "H",
+                "hB",
+            }
+            preferred{"h"}
+        }
+        XB{
+            allowed{
+                "h",
+                "hB",
+                "hb",
+                "H",
+            }
+            preferred{"h"}
+        }
         XK{
             allowed{
                 "H",
