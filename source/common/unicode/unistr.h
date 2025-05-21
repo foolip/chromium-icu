@@ -346,8 +346,8 @@ public:
   template<typename S, typename = std::enable_if_t<ConvertibleToU16StringView<S>>>
   inline bool operator==(const S &text) const {
     std::u16string_view sv(internal::toU16StringView(text));
-    uint32_t len;  // unsigned to avoid a compiler warning
-    return !isBogus() && (len = length()) == sv.length() && doEquals(sv.data(), len);
+    int32_t len;
+    return !isBogus() && (len = length()) == static_cast<int32_t>(sv.length()) && doEquals(sv.data(), len);
   }
 #endif  // U_HIDE_DRAFT_API
 
