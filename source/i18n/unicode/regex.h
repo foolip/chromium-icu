@@ -145,7 +145,7 @@ public:
      * @return the copy of this RegexPattern
      * @stable ICU 2.4
      */
-    RegexPattern  *clone() const;
+    virtual RegexPattern  *clone() const;
 
 
    /**
@@ -325,7 +325,7 @@ public:
     * @return  the #URegexpFlag match mode flags
     * @stable ICU 2.4
     */
-    uint32_t flags() const;
+    virtual uint32_t flags() const;
 
    /**
     * Creates a RegexMatcher that will match the given input against this pattern.  The
@@ -344,7 +344,7 @@ public:
     *
     * @stable ICU 2.4
     */
-    RegexMatcher *matcher(const UnicodeString &input,
+    virtual RegexMatcher *matcher(const UnicodeString &input,
         UErrorCode          &status) const;
         
 private:
@@ -376,7 +376,7 @@ public:
     *
     * @stable ICU 2.6
     */
-    RegexMatcher *matcher(UErrorCode  &status) const;
+    virtual RegexMatcher *matcher(UErrorCode  &status) const;
 
 
    /**
@@ -425,7 +425,7 @@ public:
     * the returned string may no longer reflect the RegexPattern object.
     * @stable ICU 2.4
     */
-    UnicodeString pattern() const;
+    virtual UnicodeString pattern() const;
     
     
    /**
@@ -438,7 +438,7 @@ public:
     *
     * @stable ICU 4.6
     */
-    UText *patternText(UErrorCode      &status) const;
+    virtual UText *patternText(UErrorCode      &status) const;
 
 
     /**
@@ -454,7 +454,7 @@ public:
      *
      * @stable ICU 55
      */
-    int32_t groupNumberFromName(const UnicodeString &groupName, UErrorCode &status) const;
+    virtual int32_t groupNumberFromName(const UnicodeString &groupName, UErrorCode &status) const;
 
 
     /**
@@ -473,7 +473,7 @@ public:
      *
      * @stable ICU 55
      */
-    int32_t groupNumberFromName(const char *groupName, int32_t nameLength, UErrorCode &status) const;
+    virtual int32_t groupNumberFromName(const char *groupName, int32_t nameLength, UErrorCode &status) const;
 
 
     /**
@@ -514,7 +514,7 @@ public:
      * @return        The number of fields into which the input string was split.
      * @stable ICU 2.4
      */
-    int32_t  split(const UnicodeString &input,
+    virtual int32_t  split(const UnicodeString &input,
         UnicodeString    dest[],
         int32_t          destCapacity,
         UErrorCode       &status) const;
@@ -558,7 +558,7 @@ public:
      *
      * @stable ICU 4.6
      */
-    int32_t  split(UText *input,
+    virtual int32_t  split(UText *input,
         UText            *dest[],
         int32_t          destCapacity,
         UErrorCode       &status) const;
@@ -767,7 +767,7 @@ public:
     *    @return true if there is a match
     *    @stable ICU 2.4
     */
-    UBool matches(UErrorCode &status);
+    virtual UBool matches(UErrorCode &status);
 
 
    /**
@@ -780,7 +780,7 @@ public:
     *    @return true if there is a match
     *    @stable ICU 2.8
     */
-    UBool matches(int64_t startIndex, UErrorCode &status);
+    virtual UBool matches(int64_t startIndex, UErrorCode &status);
 
 
    /**
@@ -796,7 +796,7 @@ public:
     *    @return  true if there is a match at the start of the input string.
     *    @stable ICU 2.4
     */
-    UBool lookingAt(UErrorCode &status);
+    virtual UBool lookingAt(UErrorCode &status);
 
 
   /**
@@ -812,7 +812,7 @@ public:
     *    @return  true if there is a match.
     *    @stable ICU 2.8
     */
-    UBool lookingAt(int64_t startIndex, UErrorCode &status);
+    virtual UBool lookingAt(int64_t startIndex, UErrorCode &status);
 
 
    /**
@@ -827,7 +827,7 @@ public:
     *  @return  true if a match is found.
     *  @stable ICU 2.4
     */
-    UBool find();
+    virtual UBool find();
 
 
    /**
@@ -844,7 +844,7 @@ public:
     *  @return  true if a match is found.
     * @stable ICU 55
     */
-    UBool find(UErrorCode &status);
+    virtual UBool find(UErrorCode &status);
 
    /**
     *   Resets this RegexMatcher and then attempts to find the next substring of the
@@ -855,7 +855,7 @@ public:
     *   @return  true if a match is found.
     *   @stable ICU 2.4
     */
-    UBool find(int64_t start, UErrorCode &status);
+    virtual UBool find(int64_t start, UErrorCode &status);
 
 
    /**
@@ -867,7 +867,7 @@ public:
     *   @return  a string containing the matched input text.
     *   @stable ICU 2.4
     */
-    UnicodeString group(UErrorCode &status) const;
+    virtual UnicodeString group(UErrorCode &status) const;
 
 
    /**
@@ -887,14 +887,14 @@ public:
     *    @return the captured text
     *    @stable ICU 2.4
     */
-    UnicodeString group(int32_t groupNum, UErrorCode &status) const;
+    virtual UnicodeString group(int32_t groupNum, UErrorCode &status) const;
 
    /**
     *   Returns the number of capturing groups in this matcher's pattern.
     *   @return the number of capture groups
     *   @stable ICU 2.4
     */
-    int32_t groupCount() const;
+    virtual int32_t groupCount() const;
 
 
    /**
@@ -911,7 +911,7 @@ public:
     *
     *   @stable ICU 4.6
     */
-    UText *group(UText *dest, int64_t &group_len, UErrorCode &status) const; 
+    virtual UText *group(UText *dest, int64_t &group_len, UErrorCode &status) const; 
 
    /**
     *   Returns a shallow clone of the entire live input string with the UText current native index
@@ -933,7 +933,7 @@ public:
     *
     *   @stable ICU 4.6
     */
-    UText *group(int32_t groupNum, UText *dest, int64_t &group_len, UErrorCode &status) const;
+    virtual UText *group(int32_t groupNum, UText *dest, int64_t &group_len, UErrorCode &status) const;
 
    /**
     *   Returns the index in the input string of the start of the text matched
@@ -942,7 +942,7 @@ public:
     *    @return              The (native) position in the input string of the start of the last match.
     *    @stable ICU 2.4
     */
-    int32_t start(UErrorCode &status) const;
+    virtual int32_t start(UErrorCode &status) const;
 
    /**
     *   Returns the index in the input string of the start of the text matched
@@ -951,7 +951,7 @@ public:
     *    @return              The (native) position in the input string of the start of the last match.
     *   @stable ICU 4.6
     */
-    int64_t start64(UErrorCode &status) const;
+    virtual int64_t start64(UErrorCode &status) const;
 
 
    /**
@@ -967,7 +967,7 @@ public:
     *    @return the (native) start position of substring matched by the specified group.
     *    @stable ICU 2.4
     */
-    int32_t start(int32_t group, UErrorCode &status) const;
+    virtual int32_t start(int32_t group, UErrorCode &status) const;
 
    /**
     *   Returns the index in the input string of the start of the text matched by the
@@ -982,7 +982,7 @@ public:
     *    @return the (native) start position of substring matched by the specified group.
     *    @stable ICU 4.6
     */
-    int64_t start64(int32_t group, UErrorCode &status) const;
+    virtual int64_t start64(int32_t group, UErrorCode &status) const;
 
    /**
     *    Returns the index in the input string of the first character following the
@@ -997,7 +997,7 @@ public:
     *                        a byte index for UTF-8.
     *   @stable ICU 2.4
     */
-    int32_t end(UErrorCode &status) const;
+    virtual int32_t end(UErrorCode &status) const;
 
    /**
     *    Returns the index in the input string of the first character following the
@@ -1012,7 +1012,7 @@ public:
     *                        a byte index for UTF-8.
     *   @stable ICU 4.6
     */
-    int64_t end64(UErrorCode &status) const;
+    virtual int64_t end64(UErrorCode &status) const;
 
 
    /**
@@ -1032,7 +1032,7 @@ public:
     *              a byte index for UTF8.
     *    @stable ICU 2.4
     */
-    int32_t end(int32_t group, UErrorCode &status) const;
+    virtual int32_t end(int32_t group, UErrorCode &status) const;
 
    /**
     *    Returns the index in the input string of the character following the
@@ -1051,7 +1051,7 @@ public:
     *              a byte index for UTF8.
     *   @stable ICU 4.6
     */
-    int64_t end64(int32_t group, UErrorCode &status) const;
+    virtual int64_t end64(int32_t group, UErrorCode &status) const;
 
    /**
     *   Resets this matcher.  The effect is to remove any memory of previous matches,
@@ -1061,7 +1061,7 @@ public:
     *   @return this RegexMatcher.
     *   @stable ICU 2.4
     */
-    RegexMatcher &reset();
+    virtual RegexMatcher &reset();
 
 
    /**
@@ -1079,7 +1079,7 @@ public:
     *   @return this RegexMatcher.
     *   @stable ICU 2.8
     */
-    RegexMatcher &reset(int64_t index, UErrorCode &status);
+    virtual RegexMatcher &reset(int64_t index, UErrorCode &status);
 
 
    /**
@@ -1099,7 +1099,7 @@ public:
     *   @return this RegexMatcher.
     *   @stable ICU 2.4
     */
-    RegexMatcher &reset(const UnicodeString &input);
+    virtual RegexMatcher &reset(const UnicodeString &input);
 
 
    /**
@@ -1115,7 +1115,7 @@ public:
     *
     *   @stable ICU 4.6
     */
-    RegexMatcher &reset(UText *input);
+    virtual RegexMatcher &reset(UText *input);
 
 
   /**
@@ -1142,7 +1142,7 @@ public:
     *
     * @stable ICU 4.8 
     */
-    RegexMatcher &refreshInputText(UText *input, UErrorCode &status);
+    virtual RegexMatcher &refreshInputText(UText *input, UErrorCode &status);
 
 private:
     /**
@@ -1167,7 +1167,7 @@ public:
     *   @return the input string
     *   @stable ICU 2.4
     */
-    const UnicodeString &input() const;
+    virtual const UnicodeString &input() const;
     
    /**
     *   Returns the input string being matched.  This is the live input text; it should not be
@@ -1177,7 +1177,7 @@ public:
     *
     *   @stable ICU 4.6
     */
-    UText *inputText() const;
+    virtual UText *inputText() const;
     
    /**
     *   Returns the input string being matched, either by copying it into the provided
@@ -1189,7 +1189,7 @@ public:
     *
     *   @stable ICU 4.6
     */
-    UText *getInput(UText *dest, UErrorCode &status) const;
+    virtual UText *getInput(UText *dest, UErrorCode &status) const;
     
 
    /** Sets the limits of this matcher's region.
@@ -1210,7 +1210,7 @@ public:
      * @param status A reference to a UErrorCode to receive any errors.
      * @stable ICU 4.0
      */
-     RegexMatcher &region(int64_t start, int64_t limit, UErrorCode &status);
+     virtual RegexMatcher &region(int64_t start, int64_t limit, UErrorCode &status);
 
    /** 
      * Identical to region(start, limit, status) but also allows a start position without
@@ -1223,7 +1223,7 @@ public:
      *                U_INDEX_OUTOFBOUNDS_ERROR is returned.
      * @stable ICU 4.6
      */
-     RegexMatcher &region(int64_t regionStart, int64_t regionLimit, int64_t startIndex, UErrorCode &status);
+     virtual RegexMatcher &region(int64_t regionStart, int64_t regionLimit, int64_t startIndex, UErrorCode &status);
 
    /**
      * Reports the start index of this matcher's region. The searches this matcher
@@ -1233,7 +1233,7 @@ public:
      * @return The starting (native) index of this matcher's region.
      * @stable ICU 4.0
      */
-     int32_t regionStart() const;
+     virtual int32_t regionStart() const;
 
    /**
      * Reports the start index of this matcher's region. The searches this matcher
@@ -1243,7 +1243,7 @@ public:
      * @return The starting (native) index of this matcher's region.
      * @stable ICU 4.6
      */
-     int64_t regionStart64() const;
+     virtual int64_t regionStart64() const;
 
 
     /**
@@ -1254,7 +1254,7 @@ public:
       * @return The ending point (native) of this matcher's region.
       * @stable ICU 4.0
       */
-      int32_t regionEnd() const;
+      virtual int32_t regionEnd() const;
 
    /**
      * Reports the end (limit) index (exclusive) of this matcher's region. The searches
@@ -1264,7 +1264,7 @@ public:
      * @return The ending point (native) of this matcher's region.
      * @stable ICU 4.6
      */
-      int64_t regionEnd64() const;
+      virtual int64_t regionEnd64() const;
 
     /**
       * Queries the transparency of region bounds for this matcher.
@@ -1274,7 +1274,7 @@ public:
       * @return true if this matcher is using opaque bounds, false if it is not.
       * @stable ICU 4.0
       */
-      UBool hasTransparentBounds() const;
+      virtual UBool hasTransparentBounds() const;
 
     /**
       * Sets the transparency of region bounds for this matcher.
@@ -1294,7 +1294,7 @@ public:
       * @return  This Matcher;
       * @stable ICU 4.0
       **/
-      RegexMatcher &useTransparentBounds(UBool b);
+      virtual RegexMatcher &useTransparentBounds(UBool b);
 
      
     /**
@@ -1304,7 +1304,7 @@ public:
       * @return true if this matcher is using anchoring bounds.
       * @stable ICU 4.0
       */    
-      UBool hasAnchoringBounds() const;
+      virtual UBool hasAnchoringBounds() const;
 
 
     /**
@@ -1319,7 +1319,7 @@ public:
       * @return  This Matcher
       * @stable ICU 4.0
       */
-      RegexMatcher &useAnchoringBounds(UBool b);
+      virtual RegexMatcher &useAnchoringBounds(UBool b);
 
 
     /**
@@ -1334,7 +1334,7 @@ public:
       *  @return  true if the most recent match hit the end of input
       *  @stable ICU 4.0
       */
-      UBool hitEnd() const;
+      virtual UBool hitEnd() const;
 
     /**
       * Return true the most recent match succeeded and additional input could cause
@@ -1345,7 +1345,7 @@ public:
       * @return true if more input could cause the most recent match to no longer match.
       * @stable ICU 4.0
       */
-      UBool requireEnd() const;
+      virtual UBool requireEnd() const;
 
 
    /**
@@ -1353,7 +1353,7 @@ public:
     *    @return  the RegexPattern for this RegexMatcher
     *    @stable ICU 2.4
     */
-    const RegexPattern &pattern() const;
+    virtual const RegexPattern &pattern() const;
 
 
    /**
@@ -1372,7 +1372,7 @@ public:
     *    @return              a string containing the results of the find and replace.
     *    @stable ICU 2.4
     */
-    UnicodeString replaceAll(const UnicodeString &replacement, UErrorCode &status);
+    virtual UnicodeString replaceAll(const UnicodeString &replacement, UErrorCode &status);
 
 
    /**
@@ -1395,7 +1395,7 @@ public:
     *
     *    @stable ICU 4.6
     */
-    UText *replaceAll(UText *replacement, UText *dest, UErrorCode &status);
+    virtual UText *replaceAll(UText *replacement, UText *dest, UErrorCode &status);
     
 
    /**
@@ -1418,7 +1418,7 @@ public:
     *    @return              a string containing the results of the find and replace.
     *    @stable ICU 2.4
     */
-    UnicodeString replaceFirst(const UnicodeString &replacement, UErrorCode &status);
+    virtual UnicodeString replaceFirst(const UnicodeString &replacement, UErrorCode &status);
     
 
    /**
@@ -1445,7 +1445,7 @@ public:
     *
     *    @stable ICU 4.6
     */
-    UText *replaceFirst(UText *replacement, UText *dest, UErrorCode &status);
+    virtual UText *replaceFirst(UText *replacement, UText *dest, UErrorCode &status);
     
     
    /**
@@ -1475,7 +1475,7 @@ public:
     *   @stable ICU 2.4
     *
     */
-    RegexMatcher &appendReplacement(UnicodeString &dest,
+    virtual RegexMatcher &appendReplacement(UnicodeString &dest,
         const UnicodeString &replacement, UErrorCode &status);
     
     
@@ -1506,7 +1506,7 @@ public:
     *
     *   @stable ICU 4.6
     */
-    RegexMatcher &appendReplacement(UText *dest,
+    virtual RegexMatcher &appendReplacement(UText *dest,
         UText *replacement, UErrorCode &status);
 
 
@@ -1520,7 +1520,7 @@ public:
     *  @return  the destination string.
     *  @stable ICU 2.4
     */
-    UnicodeString &appendTail(UnicodeString &dest);
+    virtual UnicodeString &appendTail(UnicodeString &dest);
 
 
    /**
@@ -1536,7 +1536,7 @@ public:
     *
     *  @stable ICU 4.6
     */
-    UText *appendTail(UText *dest, UErrorCode &status);
+    virtual UText *appendTail(UText *dest, UErrorCode &status);
 
 
     /**
@@ -1562,7 +1562,7 @@ public:
      * @return        The number of fields into which the input string was split.
      * @stable ICU 2.6
      */
-    int32_t  split(const UnicodeString &input,
+    virtual int32_t  split(const UnicodeString &input,
         UnicodeString    dest[],
         int32_t          destCapacity,
         UErrorCode       &status);
@@ -1591,7 +1591,7 @@ public:
      *
      * @stable ICU 4.6
      */
-    int32_t  split(UText *input,
+    virtual int32_t  split(UText *input,
         UText           *dest[],
         int32_t          destCapacity,
         UErrorCode       &status);
@@ -1617,7 +1617,7 @@ public:
     *   @param   status      A reference to a UErrorCode to receive any errors.
     *   @stable ICU 4.0
     */
-    void setTimeLimit(int32_t limit, UErrorCode &status);
+    virtual void setTimeLimit(int32_t limit, UErrorCode &status);
 
   /**
     * Get the time limit, if any, for match operations made with this Matcher.
@@ -1625,7 +1625,7 @@ public:
     *   @return the maximum allowed time for a match, in units of processing steps.
     *   @stable ICU 4.0
     */
-    int32_t getTimeLimit() const;
+    virtual int32_t getTimeLimit() const;
 
   /**
     *  Set the amount of heap storage available for use by the match backtracking stack.
@@ -1648,7 +1648,7 @@ public:
     *
     *  @stable ICU 4.0
     */
-    void setStackLimit(int32_t  limit, UErrorCode &status);
+    virtual void setStackLimit(int32_t  limit, UErrorCode &status);
     
   /**
     *  Get the size of the heap storage available for use by the back tracking stack.
@@ -1657,7 +1657,7 @@ public:
     *           stack size is unlimited.
     *  @stable ICU 4.0
     */
-    int32_t  getStackLimit() const;
+    virtual int32_t  getStackLimit() const;
 
 
   /**
@@ -1673,7 +1673,7 @@ public:
     *    @param   status      A reference to a UErrorCode to receive any errors.
     *  @stable ICU 4.0
     */
-    void setMatchCallback(URegexMatchCallback     *callback,
+    virtual void setMatchCallback(URegexMatchCallback     *callback,
                                   const void              *context,
                                   UErrorCode              &status);
 
@@ -1688,7 +1688,7 @@ public:
     *    @param   status      A reference to a UErrorCode to receive any errors.
     *    @stable ICU 4.0
     */
-    void getMatchCallback(URegexMatchCallback     *&callback,
+    virtual void getMatchCallback(URegexMatchCallback     *&callback,
                                   const void              *&context,
                                   UErrorCode              &status);
 
@@ -1706,7 +1706,7 @@ public:
     *    @param   status      A reference to a UErrorCode to receive any errors.
     *    @stable ICU 4.6
     */
-    void setFindProgressCallback(URegexFindProgressCallback      *callback,
+    virtual void setFindProgressCallback(URegexFindProgressCallback      *callback,
                                               const void                              *context,
                                               UErrorCode                              &status);
 
@@ -1721,7 +1721,7 @@ public:
     *    @param   status      A reference to a UErrorCode to receive any errors.
     *    @stable ICU 4.6
     */
-    void getFindProgressCallback(URegexFindProgressCallback      *&callback,
+    virtual void getFindProgressCallback(URegexFindProgressCallback      *&callback,
                                               const void                      *&context,
                                               UErrorCode                      &status);
 
