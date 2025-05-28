@@ -264,10 +264,10 @@ en{
         }
         chinese{
             DateTimePatterns{
-                "h:mm:ss a zzzz",
-                "h:mm:ss a z",
-                "h:mm:ss a",
-                "h:mm a",
+                "h:mm:ss a zzzz",
+                "h:mm:ss a z",
+                "h:mm:ss a",
+                "h:mm a",
                 "EEEE, MMMM d, r(U)",
                 "MMMM d, r(U)",
                 "MMM d, r",
@@ -417,22 +417,22 @@ en{
                 }
                 fallback{"{0} – {1}"}
                 h{
-                    a{"h a – h a"}
-                    h{"h – h a"}
+                    a{"h a – h a"}
+                    h{"h – h a"}
                 }
                 hm{
-                    a{"h:mm a – h:mm a"}
-                    h{"h:mm – h:mm a"}
-                    m{"h:mm – h:mm a"}
+                    a{"h:mm a – h:mm a"}
+                    h{"h:mm – h:mm a"}
+                    m{"h:mm – h:mm a"}
                 }
                 hmv{
-                    a{"h:mm a – h:mm a v"}
-                    h{"h:mm – h:mm a v"}
-                    m{"h:mm – h:mm a v"}
+                    a{"h:mm a – h:mm a v"}
+                    h{"h:mm – h:mm a v"}
+                    m{"h:mm – h:mm a v"}
                 }
                 hv{
-                    a{"h a – h a v"}
-                    h{"h – h a v"}
+                    a{"h a – h a v"}
+                    h{"h – h a v"}
                 }
                 y{
                     y{"U – U"}
@@ -549,10 +549,10 @@ en{
         }
         generic{
             DateTimePatterns{
-                "h:mm:ss a zzzz",
-                "h:mm:ss a z",
-                "h:mm:ss a",
-                "h:mm a",
+                "h:mm:ss a zzzz",
+                "h:mm:ss a z",
+                "h:mm:ss a",
+                "h:mm a",
                 "EEEE, MMMM d, y G",
                 "MMMM d, y G",
                 "MMM d, y G",
@@ -725,22 +725,22 @@ en{
                 }
                 fallback{"{0} – {1}"}
                 h{
-                    a{"h a – h a"}
-                    h{"h – h a"}
+                    a{"h a – h a"}
+                    h{"h – h a"}
                 }
                 hm{
-                    a{"h:mm a – h:mm a"}
-                    h{"h:mm – h:mm a"}
-                    m{"h:mm – h:mm a"}
+                    a{"h:mm a – h:mm a"}
+                    h{"h:mm – h:mm a"}
+                    m{"h:mm – h:mm a"}
                 }
                 hmv{
-                    a{"h:mm a – h:mm a v"}
-                    h{"h:mm – h:mm a v"}
-                    m{"h:mm – h:mm a v"}
+                    a{"h:mm a – h:mm a v"}
+                    h{"h:mm – h:mm a v"}
+                    m{"h:mm – h:mm a v"}
                 }
                 hv{
-                    a{"h a – h a v"}
-                    h{"h – h a v"}
+                    a{"h a – h a v"}
+                    h{"h – h a v"}
                 }
                 y{
                     y{"y – y G"}
@@ -801,10 +801,10 @@ en{
                 "p",
             }
             DateTimePatterns{
-                "h:mm:ss a zzzz",
-                "h:mm:ss a z",
-                "h:mm:ss a",
-                "h:mm a",
+                "h:mm:ss a zzzz",
+                "h:mm:ss a z",
+                "h:mm:ss a",
+                "h:mm a",
                 "EEEE, MMMM d, y",
                 "MMMM d, y",
                 "MMM d, y",
@@ -1148,22 +1148,22 @@ en{
                 }
                 fallback{"{0} – {1}"}
                 h{
-                    a{"h a – h a"}
-                    h{"h – h a"}
+                    a{"h a – h a"}
+                    h{"h – h a"}
                 }
                 hm{
-                    a{"h:mm a – h:mm a"}
-                    h{"h:mm – h:mm a"}
-                    m{"h:mm – h:mm a"}
+                    a{"h:mm a – h:mm a"}
+                    h{"h:mm – h:mm a"}
+                    m{"h:mm – h:mm a"}
                 }
                 hmv{
-                    a{"h:mm a – h:mm a v"}
-                    h{"h:mm – h:mm a v"}
-                    m{"h:mm – h:mm a v"}
+                    a{"h:mm a – h:mm a v"}
+                    h{"h:mm – h:mm a v"}
+                    m{"h:mm – h:mm a v"}
                 }
                 hv{
-                    a{"h a – h a v"}
-                    h{"h – h a v"}
+                    a{"h a – h a v"}
+                    h{"h – h a v"}
                 }
                 y{
                     y{"y – y"}
@@ -1336,10 +1336,10 @@ en{
         }
         hebrew{
             DateTimePatterns{
-                "h:mm:ss a zzzz",
-                "h:mm:ss a z",
-                "h:mm:ss a",
-                "h:mm a",
+                "h:mm:ss a zzzz",
+                "h:mm:ss a z",
+                "h:mm:ss a",
+                "h:mm a",
                 "EEEE, d MMMM y",
                 "d MMMM y",
                 "d MMM y",
@@ -1569,10 +1569,10 @@ en{
         }
         islamic{
             DateTimePatterns{
-                "h:mm:ss a zzzz",
-                "h:mm:ss a z",
-                "h:mm:ss a",
-                "h:mm a",
+                "h:mm:ss a zzzz",
+                "h:mm:ss a z",
+                "h:mm:ss a",
+                "h:mm a",
                 "EEEE, MMMM d, y G",
                 "MMMM d, y G",
                 "MMM d, y G",
@@ -1667,10 +1667,10 @@ en{
         }
         japanese{
             DateTimePatterns{
-                "h:mm:ss a zzzz",
-                "h:mm:ss a z",
-                "h:mm:ss a",
-                "h:mm a",
+                "h:mm:ss a zzzz",
+                "h:mm:ss a z",
+                "h:mm:ss a",
+                "h:mm a",
                 "EEEE, MMMM d, y G",
                 "MMMM d, y G",
                 "MMM d, y G",

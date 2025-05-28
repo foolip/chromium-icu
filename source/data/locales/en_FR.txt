@@ -7,7 +7,7 @@ en_FR{
         latn{
             symbols{
                 decimal{","}
-                group{" "}
+                group{" "}
             }
         }
     }

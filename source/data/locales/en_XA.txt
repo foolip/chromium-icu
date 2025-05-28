@@ -16,10 +16,10 @@ en_XA{
         }
         chinese{
             DateTimePatterns{
-                "h:mm:ss a zzzz",
-                "h:mm:ss a z",
-                "h:mm:ss a",
-                "h:mm a",
+                "h:mm:ss a zzzz",
+                "h:mm:ss a z",
+                "h:mm:ss a",
+                "h:mm a",
                 "[EEEE, MMMM d, r(U) 'one' 'two' 'three']",
                 "[MMMM d, r(U) 'one' 'two']",
                 "[MMM d, r 'one' 'two']",
@@ -169,22 +169,22 @@ en_XA{
                 }
                 fallback{"[{0} – {1} 'one' 'two']"}
                 h{
-                    a{"[h a – h a 'one' 'two']"}
-                    h{"[h – h a 'one' 'two']"}
+                    a{"[h a – h a 'one' 'two']"}
+                    h{"[h – h a 'one' 'two']"}
                 }
                 hm{
-                    a{"[h:mm a – h:mm a 'one' 'two' 'three']"}
-                    h{"[h:mm – h:mm a 'one' 'two']"}
-                    m{"[h:mm – h:mm a 'one' 'two']"}
+                    a{"[h:mm a – h:mm a 'one' 'two' 'three']"}
+                    h{"[h:mm – h:mm a 'one' 'two']"}
+                    m{"[h:mm – h:mm a 'one' 'two']"}
                 }
                 hmv{
-                    a{"[h:mm a – h:mm a v 'one' 'two' 'three']"}
-                    h{"[h:mm – h:mm a v 'one' 'two' 'three']"}
-                    m{"[h:mm – h:mm a v 'one' 'two' 'three']"}
+                    a{"[h:mm a – h:mm a v 'one' 'two' 'three']"}
+                    h{"[h:mm – h:mm a v 'one' 'two' 'three']"}
+                    m{"[h:mm – h:mm a v 'one' 'two' 'three']"}
                 }
                 hv{
-                    a{"[h a – h a v 'one' 'two']"}
-                    h{"[h – h a v 'one' 'two']"}
+                    a{"[h a – h a v 'one' 'two']"}
+                    h{"[h – h a v 'one' 'two']"}
                 }
                 y{
                     y{"[U – U 'one']"}
@@ -287,10 +287,10 @@ en_XA{
         }
         generic{
             DateTimePatterns{
-                "h:mm:ss a zzzz",
-                "h:mm:ss a z",
-                "h:mm:ss a",
-                "h:mm a",
+                "h:mm:ss a zzzz",
+                "h:mm:ss a z",
+                "h:mm:ss a",
+                "h:mm a",
                 "[EEEE, MMMM d, y G 'one' 'two' 'three']",
                 "[MMMM d, y G 'one' 'two']",
                 "[MMM d, y G 'one' 'two']",
@@ -463,22 +463,22 @@ en_XA{
                 }
                 fallback{"[{0} – {1} 'one' 'two']"}
                 h{
-                    a{"[h a – h a 'one' 'two']"}
-                    h{"[h – h a 'one' 'two']"}
+                    a{"[h a – h a 'one' 'two']"}
+                    h{"[h – h a 'one' 'two']"}
                 }
                 hm{
-                    a{"[h:mm a – h:mm a 'one' 'two' 'three']"}
-                    h{"[h:mm – h:mm a 'one' 'two']"}
-                    m{"[h:mm – h:mm a 'one' 'two']"}
+                    a{"[h:mm a – h:mm a 'one' 'two' 'three']"}
+                    h{"[h:mm – h:mm a 'one' 'two']"}
+                    m{"[h:mm – h:mm a 'one' 'two']"}
                 }
                 hmv{
-                    a{"[h:mm a – h:mm a v 'one' 'two' 'three']"}
-                    h{"[h:mm – h:mm a v 'one' 'two' 'three']"}
-                    m{"[h:mm – h:mm a v 'one' 'two' 'three']"}
+                    a{"[h:mm a – h:mm a v 'one' 'two' 'three']"}
+                    h{"[h:mm – h:mm a v 'one' 'two' 'three']"}
+                    m{"[h:mm – h:mm a v 'one' 'two' 'three']"}
                 }
                 hv{
-                    a{"[h a – h a v 'one' 'two']"}
-                    h{"[h – h a v 'one' 'two']"}
+                    a{"[h a – h a v 'one' 'two']"}
+                    h{"[h – h a v 'one' 'two']"}
                 }
                 y{
                     y{"[y – y G 'one' 'two']"}
@@ -535,9 +535,9 @@ en_XA{
                 "[þɱ one]",
             }
             DateTimePatterns{
-                "[h:mm:ss a zzzz 'one' 'two']",
-                "[h:mm:ss a z 'one' 'two']",
-                "[h:mm:ss a 'one' 'two']",
+                "[h:mm:ss a zzzz 'one' 'two']",
+                "[h:mm:ss a z 'one' 'two']",
+                "[h:mm:ss a 'one' 'two']",
                 "[H:mm]",
                 "[EEEE, MMMM d, y 'one' 'two' 'three']",
                 "[MMMM d, y 'one' 'two']",
@@ -846,22 +846,22 @@ en_XA{
                 }
                 fallback{"[{0} – {1} 'one' 'two']"}
                 h{
-                    a{"[h a – h a 'one' 'two']"}
-                    h{"[h – h a 'one' 'two']"}
+                    a{"[h a – h a 'one' 'two']"}
+                    h{"[h – h a 'one' 'two']"}
                 }
                 hm{
-                    a{"[h:mm a – h:mm a 'one' 'two' 'three']"}
-                    h{"[h:mm – h:mm a 'one' 'two']"}
-                    m{"[h:mm – h:mm a 'one' 'two']"}
+                    a{"[h:mm a – h:mm a 'one' 'two' 'three']"}
+                    h{"[h:mm – h:mm a 'one' 'two']"}
+                    m{"[h:mm – h:mm a 'one' 'two']"}
                 }
                 hmv{
-                    a{"[h:mm a – h:mm a v 'one' 'two' 'three']"}
-                    h{"[h:mm – h:mm a v 'one' 'two' 'three']"}
-                    m{"[h:mm – h:mm a v 'one' 'two' 'three']"}
+                    a{"[h:mm a – h:mm a v 'one' 'two' 'three']"}
+                    h{"[h:mm – h:mm a v 'one' 'two' 'three']"}
+                    m{"[h:mm – h:mm a v 'one' 'two' 'three']"}
                 }
                 hv{
-                    a{"[h a – h a v 'one' 'two']"}
-                    h{"[h – h a v 'one' 'two']"}
+                    a{"[h a – h a v 'one' 'two']"}
+                    h{"[h – h a v 'one' 'two']"}
                 }
                 y{
                     y{"[y – y 'one']"}
@@ -994,10 +994,10 @@ en_XA{
         }
         hebrew{
             DateTimePatterns{
-                "h:mm:ss a zzzz",
-                "h:mm:ss a z",
-                "h:mm:ss a",
-                "h:mm a",
+                "h:mm:ss a zzzz",
+                "h:mm:ss a z",
+                "h:mm:ss a",
+                "h:mm a",
                 "[EEEE, d MMMM y 'one' 'two']",
                 "[d MMMM y 'one' 'two']",
                 "[d MMM y 'one' 'two']",
@@ -1213,10 +1213,10 @@ en_XA{
         }
         islamic{
             DateTimePatterns{
-                "h:mm:ss a zzzz",
-                "h:mm:ss a z",
-                "h:mm:ss a",
-                "h:mm a",
+                "h:mm:ss a zzzz",
+                "h:mm:ss a z",
+                "h:mm:ss a",
+                "h:mm a",
                 "[EEEE, MMMM d, y G 'one' 'two' 'three']",
                 "[MMMM d, y G 'one' 'two']",
                 "[MMM d, y G 'one' 'two']",
@@ -1295,10 +1295,10 @@ en_XA{
         }
         japanese{
             DateTimePatterns{
-                "h:mm:ss a zzzz",
-                "h:mm:ss a z",
-                "h:mm:ss a",
-                "h:mm a",
+                "h:mm:ss a zzzz",
+                "h:mm:ss a z",
+                "h:mm:ss a",
+                "h:mm a",
                 "[EEEE, MMMM d, y G 'one' 'two' 'three']",
                 "[MMMM d, y G 'one' 'two']",
                 "[MMM d, y G 'one' 'two']",
