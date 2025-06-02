@@ -1170,7 +1170,7 @@ he{
             availableFormats{
                 MMMMd{"d בMMMM"}
                 Md{"d/M"}
-                h{"h a"}
+                h{"‏h a"}
                 yyyyM{"M/y"}
                 yyyyMEd{"E, d.M.y"}
                 yyyyMMM{"MMM y"}
