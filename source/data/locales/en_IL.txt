@@ -15,10 +15,10 @@ en_IL{
         }
         gregorian{
             DateTimePatterns{
-                "H:mm:ss zzzz",
-                "H:mm:ss z",
-                "H:mm:ss",
-                "H:mm",
+                "h:mm:ss a zzzz",
+                "h:mm:ss a z",
+                "h:mm:ss a",
+                "h:mm a",
                 "EEEE, d MMMM y",
                 "d MMMM y",
                 "d MMM y",

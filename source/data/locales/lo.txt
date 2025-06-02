@@ -1071,8 +1071,8 @@ lo{
                 H{"H"}
                 Hm{"H:mm"}
                 MMMEd{"E MMM d"}
-                h{"ha"}
-                hm{"h mm a"}
+                h{"h ໂມງa"}
+                hm{"h:mm a"}
                 y{"y"}
                 yM{"M/y"}
                 yMEd{"E M/d/y"}

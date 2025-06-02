@@ -35,10 +35,10 @@ csw{
                 "ᐲᒼ",
             }
             DateTimePatterns{
-                "h:mm:ss a zzzz",
-                "h:mm:ss a z",
-                "h:mm:ss a",
-                "h:mm a",
+                "h:mm:ss a zzzz",
+                "h:mm:ss a z",
+                "h:mm:ss a",
+                "h:mm a",
                 "y MMMM d, EEEE",
                 "y MMMM d",
                 "y MMM d",

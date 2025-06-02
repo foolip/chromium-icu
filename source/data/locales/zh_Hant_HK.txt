@@ -415,9 +415,9 @@ zh_Hant_HK{
         }
         japanese{
             availableFormats{
-                h{"ah時"}
-                hm{"ah:mm"}
-                hms{"ah:mm:ss"}
+                h{"Bh時"}
+                hm{"Bh:mm"}
+                hms{"Bh:mm:ss"}
             }
         }
         roc{

@@ -6,10 +6,10 @@ en_BZ{
     calendar{
         generic{
             DateTimePatterns{
-                "HH:mm:ss zzzz",
-                "HH:mm:ss z",
-                "HH:mm:ss",
-                "HH:mm",
+                "h:mm:ss a zzzz",
+                "h:mm:ss a z",
+                "h:mm:ss a",
+                "h:mm a",
                 "EEEE, dd MMMM y G",
                 "dd MMMM y G",
                 "dd-MMM-y G",
@@ -42,10 +42,10 @@ en_BZ{
         }
         gregorian{
             DateTimePatterns{
-                "HH:mm:ss zzzz",
-                "HH:mm:ss z",
-                "HH:mm:ss",
-                "HH:mm",
+                "h:mm:ss a zzzz",
+                "h:mm:ss a z",
+                "h:mm:ss a",
+                "h:mm a",
                 "EEEE, dd MMMM y",
                 "dd MMMM y",
                 "dd-MMM-y",
