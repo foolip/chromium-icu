@@ -197,7 +197,7 @@ public:
      * @return   a copy of the object
      * @stable ICU 4.0
      */
-    DateIntervalInfo* clone() const;
+    virtual DateIntervalInfo* clone() const;
 
     /**
      * Destructor.
@@ -214,7 +214,7 @@ public:
      * @return         true if other is semantically equal to this.
      * @stable ICU 4.0
      */
-    bool operator==(const DateIntervalInfo& other) const;
+    virtual bool operator==(const DateIntervalInfo& other) const;
 
     /**
      * Return true if another object is semantically unequal to this one.
