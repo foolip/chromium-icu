@@ -161,13 +161,8 @@ D. Local Modifications
 1. Applied locale data patches from Google obtained by diff'ing
    the upstream copy and Google's internal copy for source/data
 
-  - patches/locale_google.patch:
-    * Google's internal ICU locale changes
-    * Simpler region names for Hong Kong and Macau in all locales
-    * Currency signs in ru and uk locales (do not include 'tr' locale changes)
-    * AM/PM, midnight, noon formatting for a few Indian locales
-    * Timezone name changes in Korean and Chinese locales
-    * Default digit for Arabic locale is European digits.
+  - patches/chromium-data.patch: Google's internal ICU locale changes, exported
+    for use in Chromium.
 
   - patches/locale1.patch: Minor fixes for Korean
 
